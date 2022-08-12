@@ -51,19 +51,25 @@ a:hover {
 
 .container {
   text-align: center;
-  margin-top: 360px;
+  position: relative;
+  width: 100%;
 }
 
 .btn {
-  border-radius: 2px solid #d80388;
-  background: none;
-  padding: 10px 30px;
+  padding: 18px 45px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.7ms;
   position: relative;
   overflow: hidden;
-  border-radius: 1000px;
+  border-radius: 900px;
+  border-color: #fff;
+}
+.container .btn{
+  position: absolute;
+  top: 64%;
+  left: 52%;
+  transform: translate(-50%,-50%);
 }
 .btn1 {
   color: #d80388;
@@ -93,4 +99,12 @@ a:hover {
 a.active,
 a:hover{
   color: #d80388;
+}
+
+.banner-img-wrapper {
+  width: 100%;
+}
+.banner-img-wrapper img {
+  width: 100%;
+  height: 560px;
 }
