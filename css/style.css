@@ -4,58 +4,74 @@ body {
 }
 
 header {
-  background-color: #222;
+  position: sticky;
+  top: 0;
   color: #fff;
+  background-color: #000;
   display: flex;
-  align-items: center;
-  padding: 4px 40px;
+  align-items: stretch;
   justify-content: space-between;
+  z-index: 10;
 }
 
-.space {
-  width: 150px;
+header nav {
+  display: flex;
 }
-.logo a {
-  width: 150px;
+
+header nav ul li {
+  display: inline-flex;
+  align-items: stretch;
+}
+
+header nav a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+header nav a:hover,
+header nav a.active {
+  background-color: #fff;
+  color: #d80388;
+}
+
+header .space {
+  width: 213px;
+}
+
+header .logo {
+  display: inline-flex;
+  padding: 10px 50px;
+}
+
+header .logo a {
+  height: 36px;
   display: inline-block;
   color: #fff;
 }
 
-ul {
+header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-li {
+header li {
   margin-right: 100px;
 }
 
-li:last-child {
+header li:last-child {
   margin-right: 0px;
 }
 
 a {
-  color: #fff;
   text-decoration: none;
-}
-a:hover {
-  background-color: #fff;
-  color: black;
-  padding: 20px;
-}
-.navlink{
-    padding: 10px 16px;
-}
-
-.container {
-  text-align: center;
-  position: relative;
-  width: 100%;
 }
 
 .btn {
+  position: relative;
   padding: 18px 45px;
   font-size: 20px;
   cursor: pointer;
@@ -64,46 +80,65 @@ a:hover {
   overflow: hidden;
   border-radius: 900px;
   border-color: #fff;
-}
-.container .btn{
-  position: absolute;
-  top: 64%;
-  left: 52%;
-  transform: translate(-50%,-50%);
-}
-.btn1 {
   color: #d80388;
+  transition: 0.2s all ease;
 }
-.btn1:hover {
+
+.btn>span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover {
   color: #fff;
 }
+
 .btn::before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #d80388;
-  z-index: -1;
-  transition: 0.8s;
+  transition: 0.2s all ease;
   transform: scale(0);
-}
-.btn1::before {
-  top: 0;
   border-radius: 1000px;
 }
-.btn1:hover::before {
+
+.btn:hover::before {
   transform: scale(1);
 }
 
-a.active,
-a:hover{
-  color: #d80388;
+.banner {
+  background-position: top;
+  background-size: cover;
+  background-image: url("../assets/img/ubi-homescreen-store-fc_franchise_sale22-bg-desktop-en.jpg");
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.banner .banner-content {
+  text-shadow: 0px 1px 6px #000;
+}
+
+.banner .banner-content h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.banner .banner-content p {
+  font-size: 24px;
 }
 
 .banner-img-wrapper {
   width: 100%;
 }
+
 .banner-img-wrapper img {
   width: 100%;
   height: 560px;
