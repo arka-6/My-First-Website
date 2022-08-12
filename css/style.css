@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -40,9 +41,9 @@ a {
   text-decoration: none;
 }
 a:hover {
-  background-color: #fff
-  color: #000
-  padding: ;
+  background-color: #fff;
+  color: black;
+  padding: 20px;
 }
 .navlink{
     padding: 10px 16px;
@@ -87,4 +88,9 @@ a:hover {
 }
 .btn1:hover::before {
   transform: scale(1);
+}
+
+a.active,
+a:hover{
+  color: #d80388;
 }
