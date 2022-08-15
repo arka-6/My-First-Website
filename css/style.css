@@ -139,6 +139,9 @@ a {
   color: #fff;
   text-align: center;
 }
+.low-banner{
+  background-image: url("../assets/img/home-page.jpg");
+}
 .banner2 {
   background-position: top;
   background-size: cover;
@@ -207,4 +210,17 @@ figure.col > h3 {
   left: 50%;
   width: auto;
   transform: translate(-50%, -50%);
+}
+
+.user-logo{
+  padding: 0;
+  border-width: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  background-color: #000;
+}
+.video-edit{
+  width: 1280px;
+  height: 720px;
 }
